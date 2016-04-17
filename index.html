@@ -12,7 +12,7 @@
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
-	<script src="js/riffpoint.js"></script>
+	<script src="js/script.js" defer></script>
 </head>
 <body>
 	<div class="page" id="top">
@@ -33,8 +33,43 @@
 			</div>
 		</header>
 		<section class="slider main-slider section-border">
-			<div id="main-slider">
-				<img src="images/slider/people.jpg" alt="Slider Image" width="" height="">
+			<div class="wide-slider" id="main-slider">
+				<div class="slide">
+					<img class="item responsive-image"
+						src="images/slider/slide-1/desktop.jpg"
+						data-tablet-img="images/slider/slide-1/tablet.jpg"
+						data-mobile-img="images/slider/slide-1/mobile.jpg"
+						alt="Slider Image" width="1920" height="1080"
+					>
+					<div class="item content">
+						<h2 class="title">The best <b class="attention">solutions</b> starts here!</h2>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="item responsive-image"
+						src="images/slider/slide-2/desktop.jpg"
+						data-tablet-img="images/slider/slide-2/tablet.jpg"
+						data-mobile-img="images/slider/slide-2/mobile.jpg"
+						alt="Slider Image" width="1920" height="1080"
+					>
+					<div class="item content">
+						<h2 class="title">Look some <b class="attention">mountains</b></h2>
+						<p>Also there's some big lake</p>
+					</div>
+				</div>
+				<div class="slide">
+					<img class="item responsive-image"
+						src="images/slider/slide-3/desktop.jpg"
+						data-tablet-img="images/slider/slide-3/tablet.jpg"
+						data-mobile-img="images/slider/slide-3/mobile.jpg"
+						alt="Slider Image" width="1920" height="1080"
+					>
+					<div class="item content">
+						<h2 class="title">The<b class="attention">leaf</b></h2>
+						<p>Will he survive?</p>
+						<p class="small">Based on real story</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="section" id="about-comapny">
@@ -107,7 +142,10 @@
 					<li class="grid-item">
 						<a href="#" class="news-block news-featured">
 							<figure>
-								<img class="item news-image" src="images/news/featured/1.jpg" alt="Featured news">
+								<img class="item responsive-image news-image"
+									src="images/homepage/news/featured/1.jpg"
+									data-mobile-img="images/homepage/news/featured/featured_mobile.jpg"
+									alt="Featured news">
 								<figcaption class="item text-block secondary news-description">
 									<div class="text-block date-published">June 15, 2014</div>
 									<h3 class="sub-title">Featured news</h3>
@@ -121,7 +159,7 @@
 							<li class="grid-item">
 								<a href="#" class="news-block">
 									<figure>
-										<img class="item news-image" src="images/news/1.jpg" alt="News image">
+										<img class="item news-image" src="images/homepage/news/1.jpg" alt="News image">
 										<figcaption class="item text-block news-description">
 											<div class="text-block secondary date-published">June 15, 2014</div>
 											<h3 class="sub-title">Some news title</h3>
@@ -132,7 +170,7 @@
 							<li class="grid-item">
 								<a href="#" class="news-block">
 									<figure>
-										<img class="item news-image" src="images/news/2.jpg" alt="News image">
+										<img class="item news-image" src="images/homepage/news/2.jpg" alt="News image">
 										<figcaption class="item text-block news-description">
 											<div class="text-block secondary date-published">June 15, 2014</div>
 											<h3 class="sub-title">Some news title</h3>
@@ -143,7 +181,7 @@
 							<li class="grid-item">
 								<a href="#" class="news-block">
 									<figure>
-										<img class="item news-image" src="images/news/3.jpg" alt="News image">
+										<img class="item news-image" src="images/homepage/news/3.jpg" alt="News image">
 										<figcaption class="item text-block news-description">
 											<div class="text-block secondary date-published">June 15, 2014</div>
 											<h3 class="sub-title">Some really damn long post title</h3>
@@ -154,7 +192,7 @@
 							<li class="grid-item">
 								<a href="#" class="news-block">
 									<figure>
-										<img class="item news-image" src="images/news/4.jpg" alt="News image">
+										<img class="item news-image" src="images/homepage/news/4.jpg" alt="News image">
 										<figcaption class="item text-block news-description">
 											<div class="text-block secondary date-published">June 15, 2014</div>
 											<h3 class="sub-title">Some middle length title</h3>
@@ -177,6 +215,7 @@
 					<li class="grid-item map-block">
 						<div class="map">
 							<img class="ghost-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+							<div id="map"></div>
 						</div>
 					</li>
 					<li class="grid-item contact-info">

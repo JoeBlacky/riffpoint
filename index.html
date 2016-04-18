@@ -14,9 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
 	<script src="js/riffpoint.js" defer></script>
 </head>
-<body>
+<body class="no-js">
 	<div class="page" id="top">
-		<header class="header section-dark" id="header">
+		<header class="section-dark fixed fixed-top header" id="header">
 			<div class="mw">
 				<a href="/" class="item logo">
 					<img src="images/logo-with-slogan.png" alt="Project Logo" width="235" height="44" />
@@ -33,7 +33,7 @@
 			</div>
 		</header>
 		<section class="slider main-slider section-border">
-			<div class="wide-slider" id="main-slider">
+			<div class="owl-carousel wide-slider" id="main-slider">
 				<div class="slide">
 					<img class="item responsive-image"
 						src="images/slider/slide-1/desktop.jpg"
@@ -273,5 +273,14 @@
 			<a href="#top" class="scroll-top scroll icon arrow-top"></a>
 		</footer>
 	</div>
+	<noscript>
+		<div class="notice fixed fixed-bottom js-disabled-notice">
+			<div class="mw">
+				Whoops, seems like you have javascript disabled in your browser.
+				Some site features may not work.
+				Please enable javascript.
+			</div>
+		</div>
+	</noscript>
 </body>
 </html>
